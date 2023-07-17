@@ -55,7 +55,6 @@ public class AccountService {
 
     @Transactional
     public AccountDto updateAccount(Long id, AccountDto account) {
-
         Optional<Account> accountCreated = repository.findById(id);
         if (accountCreated.isPresent()) {
             Account entity = accountCreated.get();

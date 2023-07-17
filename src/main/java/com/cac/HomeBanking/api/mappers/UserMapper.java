@@ -30,7 +30,6 @@ public class UserMapper {
                 accountsId.add(id);
             }
         }
-
         dto.setIdAccounts(accountsId);
         dto.setId(user.getId());
         return dto;

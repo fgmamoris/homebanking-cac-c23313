@@ -11,7 +11,6 @@ import com.cac.HomeBanking.domain.repositories.AccountRepository;
 import com.cac.HomeBanking.domain.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -81,14 +80,6 @@ public class UserService {
         }
     }
 
-    // TODO: Generar la asociación de una primer cuenta al crear un User
-    // Agregar una cuenta al usuario
-    /*public UserDto addAccountToUser(AccountDto account, Long id) {
-        // primero: buscar el usuario por id
-        // segundo: añadir la cuenta a la lista del usuario encontrado
-        // tercero: devolver el usuario con la cuenta agregada
-        return null;
-    }*/
     public UserDto addAccountToUser(Long id, AccountDto account) {
         // Primero: buscar el usuario por id
         Optional<User> userOptional = repository.findById(id);

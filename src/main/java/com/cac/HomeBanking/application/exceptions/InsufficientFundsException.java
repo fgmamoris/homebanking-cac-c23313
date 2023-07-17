@@ -1,4 +1,4 @@
-package appication.exceptions;
+package com.cac.HomeBanking.application.exceptions;
 
 public class InsufficientFundsException extends RuntimeException {
 

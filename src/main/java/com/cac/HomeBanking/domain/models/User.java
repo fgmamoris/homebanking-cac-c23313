@@ -2,7 +2,6 @@ package com.cac.HomeBanking.domain.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.List;
 
 @Entity

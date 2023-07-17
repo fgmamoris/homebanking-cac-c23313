@@ -1,9 +1,9 @@
 package com.cac.HomeBanking.domain.exceptions;
 
 
-public class AccountNotFoundException extends RuntimeException{
+public class AccountNotFoundException extends RuntimeException {
 
-    public AccountNotFoundException (String message) {
+    public AccountNotFoundException(String message) {
         super(message);
     }
 

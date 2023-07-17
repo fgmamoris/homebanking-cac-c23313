@@ -9,12 +9,8 @@ import java.util.Date;
 public class TransferDto {
 
     private Long id;
-
     private Long origin;
-
     private Long target;
-
     private Date date;
-
     private BigDecimal amount;
 }
